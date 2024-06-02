@@ -2,6 +2,16 @@
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
+		container: {
+			screens: {
+				sm: "640px",
+				md: "768px",
+				lg: "1024px",
+				xl: "1280px",
+			},
+			center: true,
+			padding: "1rem",
+		},
 		extend: {
 			colors: {
 				cream: "#F7E5A3",
@@ -19,17 +29,24 @@ export default {
 					200: "#DADADA",
 					300: "#7C7683",
 					400: "#7F7F7F",
-					500: "#393939",
+					500: "#888888",
+					600: "#393939",
 				},
 				stroke: {
-					"brand-stroke": "#650DD3",
-					"light-brand-stroke": "#AB6BFD",
-					"blue-stroke": "#008FCA",
-					"brown-stroke": "#974510",
-					"gray-stroke": "#B2B2B2",
-					"light-gray-stroke": "#D4D4D4",
-					"dark-gray-stroke": "#252525",
+					brand: "#650DD3",
+					"light-brand": "#AB6BFD",
+					blue: "#008FCA",
+					brown: "#974510",
+					gray: "#B2B2B2",
+					"light-gray": "#D4D4D4",
+					"dark-gray": "#252525",
 					borderline: "#BEBEBE",
+				},
+				shadow: {
+					brand: "#4E00AF",
+					blue: "#0D80AF",
+					brown: "#7A3508",
+					gray: "#ABABAB",
 				},
 			},
 			backgroundImage: {
@@ -49,6 +66,11 @@ export default {
 					"linear-gradient(0deg, #848383 0%, #303030 100%)",
 				"dark-gray-gradient":
 					"linear-gradient(0deg, #FFFFFF 0%, #DADADA 100%)",
+			},
+			fontFamily: {
+				rubik: ["Rubik", "sans-serif"],
+				besley: ["Besley", "serif"],
+				arvo: ["Arvo", "serif"],
 			},
 		},
 	},
