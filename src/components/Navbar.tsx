@@ -18,7 +18,7 @@ const Navbar = () => {
 						<span className="transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700 ">
 							Courses
 						</span>
-						<div className="absolute rounded-[30px] border-[3px] border-stroke-gray shadow-[0_6px_0] shadow-stroke-gray pt-4 pb-8 px-10 top-24  w-[521px]">
+						<div className="hidden absolute rounded-[30px] border-[3px] border-stroke-gray shadow-[0_6px_0] shadow-stroke-gray pt-4 pb-8 px-10 top-24  w-[521px]">
 							<span className="font-semibold text-gray-500 font-rubik">
 								Categories
 							</span>
