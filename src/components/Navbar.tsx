@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import HamburgerButton from "./Navbar/HamburgerButton";
 import Button from "./ui/Button";
@@ -7,9 +6,9 @@ const Navbar = () => {
 	return (
 		<header className="py-6 border-b border-stroke-borderline/40 md:py-8">
 			<nav className="container flex items-center justify-between font-bold font-besley lg:text-lg">
-				<Link to="/" className="w-28">
+				<a href="/" className="w-28">
 					<img src={logo} alt="logo" className="" />
-				</Link>
+				</a>
 
 				<HamburgerButton />
 
