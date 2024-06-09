@@ -7,7 +7,7 @@ const Hero = () => {
 				<h1 className="leading-8 text-center sm:leading-10 headline">
 					fun and effective way <br /> to learn digital skills
 				</h1>
-				<div className="max-w-[550px]">
+				<div className="max-w-[570px]">
 					<img src={heroImg} alt="banner" className="w-full" />
 				</div>
 				<div className="flex flex-col items-center w-full gap-3 md:flex-row md:gap-0 lg:text-lg">
