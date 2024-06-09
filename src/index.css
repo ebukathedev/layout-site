@@ -4,11 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	html,
+	body {
+		@apply font-besley scroll-smooth;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply font-bold;
+	}
+}
+
 @layer components {
 }
 
-/* @layer components {
-	.c-header {
-		@apply bg-white shadow-md;
+@layer components {
+	.headline {
+		font-size: clamp(1.5rem, 5vw, 2.5rem);
 	}
-} */
+}
