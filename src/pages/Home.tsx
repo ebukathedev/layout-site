@@ -1,3 +1,4 @@
+import Features from "../components/Home/Features";
 import Hero from "../components/Home/Hero";
 import Navbar from "../components/Navbar";
 
@@ -6,6 +7,7 @@ const Home = () => {
 		<>
 			<Navbar />
 			<Hero />
+			<Features />
 		</>
 	);
 };
