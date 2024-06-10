@@ -1,21 +1,54 @@
-import illustration1 from "../../assets/illustration_1.png";
+import { features } from "../../data";
+import FeatureCard from "./FeatureCard";
+import skateboard from "../../assets/skateboard.png";
+import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
 
 const Features = () => {
+	const skills = [
+		"Lifestyle",
+		"Development",
+		"Design:",
+		"Marketing",
+		"Music",
+		"Photography",
+		"Cinematography",
+	];
+
 	return (
-		<section className="pt-20">
-			<div className="container">
-				<div className="flex flex-col items-center gap-10">
-					<div className="w-60">
-						<img src={illustration1} alt="" className="w-full" />
+		<section>
+			<div className="container py-20 space-y-20 md:space-y-32">
+				{features.map((feature) => (
+					<FeatureCard key={feature.id} {...feature} />
+				))}
+			</div>
+			<div className="pt-24 bg-cream">
+				<div className="container flex flex-col items-center">
+					<h1 className="mb-6 headline md:mb-10 lg:mb-[57px]">
+						learn any skill <br /> anytime, anywhere
+					</h1>
+					<Link
+						to="/"
+						className="px-8 py-3 text-sm text-white border-black btn bg-dark-gray-gradient shadow-black lg:text-lg"
+					>
+						Get started
+					</Link>
+					<div className="mt-20 mb-24 max-w-[800px] lg:mt-24 lg:mb-28">
+						<img src={skateboard} alt="" className="w-full" />
 					</div>
-					<div className="space-y-5">
-						<h3 className="text-xl">fun. simple. effective.</h3>
-						<p className="font-rubik">
-							Learning with Layout is fun! With quick, bite-sized
-							lessons, you’ll earn points and unlock new levels
-							while gaining real-world digital skills.
-						</p>
-					</div>
+				</div>
+
+				<div className="py-4 border-[0.7px] border-black">
+					<Marquee autoFill>
+						<div className="space-x-2 text-lg lg:text-xl">
+							{skills.map((skill) => (
+								<>
+									<span className="ml-2">{skill}</span>
+									<span className="font-bold"> • </span>
+								</>
+							))}
+						</div>
+					</Marquee>
 				</div>
 			</div>
 		</section>

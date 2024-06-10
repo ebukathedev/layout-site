@@ -4,7 +4,7 @@ const Hero = () => {
 	return (
 		<section className="pt-10 pb-32 border-b">
 			<div className="container flex flex-col items-center max-w-[950px] gap-8">
-				<h1 className="leading-8 text-center sm:leading-10 headline">
+				<h1 className="headline">
 					fun and effective way <br /> to learn digital skills
 				</h1>
 				<div className="max-w-[570px]">

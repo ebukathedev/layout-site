@@ -63,9 +63,10 @@ export default {
 					"linear-gradient(0deg, #F09153 0%, #C66526 100%)",
 
 				"gray-gradient":
-					"linear-gradient(0deg, #848383 0%, #303030 100%)",
-				"dark-gray-gradient":
 					"linear-gradient(0deg, #FFFFFF 0%, #DADADA 100%)",
+
+				"dark-gray-gradient":
+					"linear-gradient(0deg, #848383 0%, #303030 100%)",
 			},
 			fontFamily: {
 				rubik: ["Rubik", "sans-serif"],

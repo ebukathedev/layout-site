@@ -22,6 +22,11 @@
 
 @layer components {
 	.headline {
-		font-size: clamp(1.55rem, 5vw, 2.5rem);
+		@apply leading-8 text-center sm:leading-[3rem];
+		font-size: clamp(1.55rem, 5vw, 3rem);
+	}
+
+	.btn {
+		@apply font-extrabold border-2 shadow-[0_4px_0] inline-block font-besley rounded-[50px] text-white;
 	}
 }
