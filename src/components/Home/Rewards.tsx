@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { rewards } from "../../data";
 import FeatureCard from "./FeatureCard";
 
@@ -11,6 +11,20 @@ const Rewards = () => {
 		"Mentorship",
 		"Resources",
 	];
+
+	useEffect(() => {
+		const slide = setInterval(() => {
+			setActiveContent((prevActiveContent) => {
+				if (prevActiveContent >= rewards.length - 1) {
+					return 0;
+				}
+				return prevActiveContent + 1;
+			});
+		}, 7000);
+		return () => {
+			clearInterval(slide);
+		};
+	}, [activeContent]);
 
 	const handleActiveContent = (index: number) => {
 		setActiveContent(index);
