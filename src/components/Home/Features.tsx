@@ -17,12 +17,12 @@ const Features = () => {
 
 	return (
 		<section>
-			<div className="container py-20 space-y-20 md:space-y-32">
+			<div className="container py-20 space-y-20 md:space-y-32 ">
 				{features.map((feature) => (
-					<FeatureCard key={feature.id} {...feature} />
+					<FeatureCard key={feature.id} {...feature} odd />
 				))}
 			</div>
-			<div className="pt-24 bg-cream">
+			<div className="pt-24 border-t bg-cream border-stroke-borderline">
 				<div className="container flex flex-col items-center">
 					<h1 className="mb-6 headline md:mb-10 lg:mb-[57px]">
 						learn any skill <br /> anytime, anywhere

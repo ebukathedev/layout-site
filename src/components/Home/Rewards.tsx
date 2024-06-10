@@ -1,28 +1,52 @@
-import { features } from "../../data";
+import { useState } from "react";
+import { rewards } from "../../data";
 import FeatureCard from "./FeatureCard";
 
 const Rewards = () => {
-	const feature = features[1];
+	const [activeContent, setActiveContent] = useState(0);
+	const reward = rewards[activeContent];
+	const rewardCategories = [
+		"Tools",
+		"Certification",
+		"Mentorship",
+		"Resources",
+	];
+
+	const handleActiveContent = (index: number) => {
+		setActiveContent(index);
+	};
 
 	return (
-		<section className="py-24 border border-stroke-gray">
+		<section className="py-24 border-b border-stroke-gray">
 			<div className="container">
-				<div className="text-center">
+				<div className="space-y-6 text-center md:space-y-8 lg:space-y-10">
 					<h2 className="headline">
-						you don’t need to worry <br /> what next after your
-						course
+						you don’t need to worry{" "}
+						<br className="hidden min-[352px]:block" /> what next
+						after your courses
 					</h2>
-					<p className="font-rubik">
+					<p className="max-w-md mx-auto text-lg md:text-2xl font-rubik lg:max-w-[540px]">
 						Here is what is up for you upon your completion of your
 						courses
 					</p>
 				</div>
 				<div>
-					<div>
-						<img src="" alt="" />
+					<div className="my-20 md:my-24 h-[450px] md:h-[260px] lg:h-[390px]">
+						<FeatureCard {...reward} />
 					</div>
-					<div>
-						<FeatureCard {...feature} />
+					<div className="grid grid-cols-2 gap-6 md:flex md:justify-center">
+						{rewardCategories.map((category, index) => (
+							<button
+								onClick={() => handleActiveContent(index)}
+								className={`px-0 min-[380px]:px-8 py-3 text-xs min-[380px]:text-sm btn lg:text-lg sm:min-w-[157.16px] transition-all duration-200 ${
+									activeContent === index
+										? "bg-dark-gray-gradient shadow-black border-black text-white"
+										: "bg-gray-100 shadow-shadow-gray border-stroke-light-gray text-black opacity-60"
+								}`}
+							>
+								{category}
+							</button>
+						))}
 					</div>
 				</div>
 			</div>

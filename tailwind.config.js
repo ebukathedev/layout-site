@@ -56,17 +56,15 @@ export default {
 				"light-brand-gradient":
 					"linear-gradient(0deg,  #BE8BFF 44%, #DCC3FF 100%)",
 
-				"blue-gradient":
-					"linear-gradient(0deg, #6CD3FD 0%, #00A6EA 100%)",
+				"blue-gradient": "linear-gradient(#6CD3FD 0%, #00A6EA 100%)",
 
-				"brown-gradient":
-					"linear-gradient(0deg, #F09153 0%, #C66526 100%)",
+				"brown-gradient": "linear-gradient(#F09153 0%, #C66526 100%)",
 
 				"gray-gradient":
 					"linear-gradient(0deg, #FFFFFF 0%, #DADADA 100%)",
 
 				"dark-gray-gradient":
-					"linear-gradient(0deg, #848383 0%, #303030 100%)",
+					"linear-gradient(#848383 0%, #303030 100%)",
 			},
 			fontFamily: {
 				rubik: ["Rubik", "sans-serif"],
