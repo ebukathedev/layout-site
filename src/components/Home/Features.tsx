@@ -40,7 +40,7 @@ const Features = () => {
 
 				<div className="py-4 border-[0.7px] border-black">
 					<Marquee autoFill>
-						<div className="space-x-2 text-lg lg:text-xl">
+						<div className="text-lg space-x-2 lg:text-xl">
 							{skills.map((skill) => (
 								<>
 									<span className="ml-2">{skill}</span>

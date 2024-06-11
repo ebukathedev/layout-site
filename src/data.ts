@@ -74,3 +74,42 @@ export const rewards = [
 			"Our resource hub provides a wealth of materials, including textbooks, online courses, tutorials, and practice exercises.",
 	},
 ];
+
+export const testimonials = [
+	{
+		id: 1,
+		description:
+			"I've been blown away by the supportive community at Layout. From the mentors who generously share their expertise to the fellow learners who offer encouragement and feedback, I've found a place where I can grow as a designer and connect with like-minded creatives.",
+		author: "Peace Godwil",
+	},
+	{
+		id: 2,
+		description:
+			"As someone transitioning into the world of design, Layout has been resourceful. The courses are comprehensive and full yet very fun, and the mentorship program has provided me with guidance and support every step of the way. I'm grateful to be part of such a vibrant and inclusive community.",
+		author: "Michael Adewale",
+	},
+	{
+		id: 3,
+		description:
+			"I've been blown away by the supportive community at Layout. From the mentors who generously share their expertise to the fellow learners who offer encouragement and feedback, I've found a place where I can grow as a designer and connect with like-minded creatives.",
+		author: "David Mark",
+	},
+	{
+		id: 4,
+		description:
+			"As someone transitioning into the world of design, Layout has been resourceful. The courses are comprehensive and full yet very fun, and the mentorship program has provided me with guidance and support every step of the way. I'm grateful to be part of such a vibrant and inclusive community.",
+		author: "Samson Goddy",
+	},
+	{
+		id: 5,
+		description:
+			"I've been blown away by the supportive community at Layout. From the mentors who generously share their expertise to the fellow learners who offer encouragement and feedback, I've found a place where I can grow as a designer and connect with like-minded creatives.",
+		author: "Edidiong Asikpo",
+	},
+	{
+		id: 6,
+		description:
+			"As someone transitioning into the world of design, Layout has been resourceful. The courses are comprehensive and full yet very fun, and the mentorship program has provided me with guidance and support every step of the way. I'm grateful to be part of such a vibrant and inclusive community.",
+		author: "Precious Kolawole",
+	},
+];

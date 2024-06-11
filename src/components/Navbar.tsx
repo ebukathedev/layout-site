@@ -14,7 +14,7 @@ const Navbar = () => {
 
 				<div className="hidden ml-10 mr-auto space-x-4 md:flex xl:ml-12">
 					<div className="relative p-2">
-						<span className="transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700 ">
+						<span className="cursor-pointer transition-colors duration-200 ease-in-out hover:text-brand-700 ">
 							Courses
 						</span>
 						<div className="hidden absolute rounded-[30px] border-[3px] border-stroke-gray shadow-[0_6px_0] shadow-stroke-gray pt-4 pb-8 px-10 top-24  w-[521px]">
@@ -31,7 +31,7 @@ const Navbar = () => {
 							</ul>
 						</div>
 					</div>
-					<div className="p-2 transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700">
+					<div className="p-2 cursor-pointer transition-colors duration-200 ease-in-out hover:text-brand-700">
 						About us
 					</div>
 				</div>
