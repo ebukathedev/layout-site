@@ -33,7 +33,7 @@ const Rewards = () => {
 	return (
 		<section className="py-24 border-b border-stroke-gray">
 			<div className="container">
-				<div className="text-center space-y-6 md:space-y-8 lg:space-y-10">
+				<div className="space-y-6 text-center md:space-y-8 lg:space-y-10">
 					<h2 className="headline">
 						you don’t need to worry{" "}
 						<br className="hidden min-[352px]:block" /> what next

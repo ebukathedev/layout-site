@@ -29,4 +29,13 @@
 	.btn {
 		@apply font-extrabold border-2 shadow-[0_4px_0] inline-block font-besley rounded-[50px] text-white;
 	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	/* Hide scrollbar for IE, Edge, and Firefox */
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
 }

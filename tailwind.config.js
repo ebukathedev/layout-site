@@ -31,6 +31,8 @@ export default {
 					400: "#7F7F7F",
 					500: "#888888",
 					600: "#393939",
+					700: "#CCCCCC",
+					800: "#AFAFAF",
 				},
 				stroke: {
 					brand: "#650DD3",
@@ -60,8 +62,7 @@ export default {
 
 				"brown-gradient": "linear-gradient(#F09153 0%, #C66526 100%)",
 
-				"gray-gradient":
-					"linear-gradient(0deg, #FFFFFF 0%, #DADADA 100%)",
+				"gray-gradient": "linear-gradient( #FFFFFF 0%, #DADADA 100%)",
 
 				"dark-gray-gradient":
 					"linear-gradient(#848383 0%, #303030 100%)",
