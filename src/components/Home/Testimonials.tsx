@@ -1,17 +1,21 @@
-import { useRef } from "react";
+import { useState } from "react";
 import { testimonials } from "../../data";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaChevronLeft } from "react-icons/fa6";
 
 const Testimonials = () => {
-	const carouselRef = useRef<HTMLDivElement>(null);
-
-	const handleNext = () => {
-		carouselRef.current!.scrollBy({ left: 436, behavior: "smooth" });
-	};
+	const [current, setCurrent] = useState(0);
 
 	const handlePrev = () => {
-		carouselRef.current!.scrollBy({ left: -436, behavior: "smooth" });
+		setCurrent((current) =>
+			current === 0 ? testimonials.length - 1 : current - 1
+		);
+	};
+
+	const handleNext = () => {
+		setCurrent((current) =>
+			current === testimonials.length - 1 ? 0 : current + 1
+		);
 	};
 
 	return (
@@ -21,12 +25,15 @@ const Testimonials = () => {
 					join learners that <br /> love layout
 				</h2>
 				<div className="space-y-8 md:space-y-10 lg:space-y-12 font-besely">
-					<div
-						ref={carouselRef}
-						className="flex pb-4 overflow-x-hidden gap-9 max-w-[400px] mx-auto md:max-w-[500px] lg:max-w-[860px] no-scrollbar"
-					>
+					<div className="flex pb-4 overflow-x-hidden gap-9 max-w-[400px] mx-auto md:max-w-[500px] lg:max-w-[860px] bg-red-300">
 						{testimonials.map((testimonial) => (
-							<div className="text-center rounded-[30px] border-[3px] border-stroke-gray px-6 py-8 flex flex-col justify-between gap-4 shadow-[0_8px_0] shadow-stroke-gray md:text-lg lg:text-xl font-medium lg:px-10 lg:py-14 min-w-full lg:min-w-[410px] md:gap-8">
+							<div
+								key={testimonial.id}
+								style={{
+									transform: `translateX(-${current * 100}%`,
+								}}
+								className="transition-transform ease-out duration-500 text-center rounded-[30px] border-[3px] border-stroke-gray px-6 py-8 flex flex-col justify-between gap-4 shadow-[0_8px_0] shadow-stroke-gray md:text-lg lg:text-xl font-medium lg:px-10 lg:py-14 min-w-full lg:min-w-[410px] md:gap-8"
+							>
 								<p>“{testimonial.description}"</p>
 								<span>{testimonial.author}</span>
 							</div>
