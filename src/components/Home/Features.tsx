@@ -4,11 +4,20 @@ import skateboard from "../../assets/skateboard.png";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
 
+const MarqueeItem = ({ skill }: { skill: string }) => {
+	return (
+		<>
+			<span className="ml-2">{skill}</span>
+			<span className="font-bold"> • </span>
+		</>
+	);
+};
+
 const Features = () => {
 	const skills = [
 		"Lifestyle",
 		"Development",
-		"Design:",
+		"Design",
 		"Marketing",
 		"Music",
 		"Photography",
@@ -40,12 +49,9 @@ const Features = () => {
 
 				<div className="py-4 border-[0.7px] border-black">
 					<Marquee autoFill>
-						<div className="text-lg space-x-2 lg:text-xl">
+						<div className="space-x-2 text-lg lg:text-xl">
 							{skills.map((skill) => (
-								<>
-									<span className="ml-2">{skill}</span>
-									<span className="font-bold"> • </span>
-								</>
+								<MarqueeItem skill={skill} key={skill} />
 							))}
 						</div>
 					</Marquee>

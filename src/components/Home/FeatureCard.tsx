@@ -1,11 +1,6 @@
 import { FeatureCardProps } from "../../types";
 
-const FeatureCard = ({
-	img,
-	title,
-	description,
-	odd,
-}: FeatureCardProps) => {
+const FeatureCard = ({ img, title, description, odd }: FeatureCardProps) => {
 	return (
 		<div
 			className={`flex flex-col items-center gap-10 md:justify-center md:flex-row md:px-4 lg:gap-20 ${

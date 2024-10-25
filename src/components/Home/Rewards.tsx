@@ -31,7 +31,7 @@ const Rewards = () => {
 	};
 
 	return (
-		<section className="py-24 border-b border-stroke-gray">
+		<section className="py-24 border-b lg:py-32 border-stroke-gray">
 			<div className="container">
 				<div className="space-y-6 text-center md:space-y-8 lg:space-y-10">
 					<h2 className="headline">
@@ -51,6 +51,7 @@ const Rewards = () => {
 					<div className="grid grid-cols-2 gap-6 md:flex md:justify-center">
 						{rewardCategories.map((category, index) => (
 							<button
+								key={category}
 								onClick={() => handleActiveContent(index)}
 								className={`px-0 min-[380px]:px-8 py-3 text-xs min-[380px]:text-sm btn lg:text-lg sm:min-w-[157.16px] transition-all duration-200 ${
 									activeContent === index

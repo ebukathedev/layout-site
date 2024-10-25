@@ -15,6 +15,7 @@ export default {
 		extend: {
 			colors: {
 				cream: "#F7E5A3",
+				red: "#E30133",
 				brand: {
 					100: "#DDC3FF",
 					200: "#DCC1FF",
