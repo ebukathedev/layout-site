@@ -31,7 +31,7 @@ const Features = () => {
 					<FeatureCard key={feature.id} {...feature} odd />
 				))}
 			</div>
-			<div className="pt-24 border-t bg-cream border-stroke-borderline">
+			<div className="pt-24 border-t bg-[#F7E5A3] border-stroke-borderline">
 				<div className="container flex flex-col items-center">
 					<h1 className="mb-6 headline md:mb-10 lg:mb-[57px]">
 						learn any skill <br /> anytime, anywhere

@@ -6,7 +6,7 @@ const Instructor = () => {
 			<div className="container">
 				<div className="flex flex-col items-center gap-20 md:justify-center md:flex-row md:px-4">
 					<div className="flex flex-col items-center text-center lg:text-left lg:items-start">
-						<div className="px-3 py-2 font-semibold text-white font-rubik bg-red rounded-[10px] text-sm w-fit">
+						<div className="px-3 py-2 font-semibold text-white font-rubik bg-[#E30133] rounded-[10px] text-sm w-fit">
 							Coming soon
 						</div>
 						<div className="mt-6 space-y-6 md:space-y-8">
