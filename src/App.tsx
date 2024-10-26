@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import About from "./pages/About";
 
 const router = createBrowserRouter([
@@ -21,10 +21,12 @@ const router = createBrowserRouter([
 	},
 ]);
 
-export default function App() {
+const App: React.FC = () => {
 	return (
 		<>
 			<RouterProvider router={router} />
 		</>
 	);
-}
+};
+
+export default App;

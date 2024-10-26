@@ -1,6 +1,4 @@
-import heroImg from "../../assets/hero_img.png";
-
-const Hero = () => {
+const Hero: React.FC = () => {
 	return (
 		<section className="pt-10 pb-32 border-b">
 			<div className="container flex flex-col items-center max-w-[950px] gap-8">
@@ -8,7 +6,13 @@ const Hero = () => {
 					fun and effective way <br /> to learn digital skills
 				</h1>
 				<div className="max-w-[570px]">
-					<img src={heroImg} alt="banner" className="w-full" />
+					<img
+						src="https://res.cloudinary.com/drtebxtdt/image/upload/v1729939946/layout/landing%20page/hero_img_wpt85e.png"
+						alt="banner"
+						className="w-full"
+						width={694}
+						height={447}
+					/>
 				</div>
 				<div className="flex flex-col items-center w-full gap-3 md:flex-row md:gap-0 lg:text-lg">
 					<div className="bg-brand-gradient shadow-shadow-brand border-[3px] border-stroke-brand shadow-[0_4px_0] rounded-[50px] py-3 text-white font-bold text-center max-w-[340px] relative w-full md:-rotate-[0.6deg] md:translate-x-6">

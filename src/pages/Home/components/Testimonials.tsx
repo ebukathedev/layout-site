@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
-import { testimonials } from "../../data";
+import { testimonials } from "../../../data";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaChevronLeft } from "react-icons/fa6";
 
-const Testimonials = () => {
+const Testimonials: React.FC = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const [translateValue, setTranslateValue] = useState("");
 	const carouselRef = useRef<HTMLDivElement>(null);
@@ -16,7 +16,6 @@ const Testimonials = () => {
 	};
 
 	const handleNext = () => {
-		let width = 0;
 		if (carouselRef.current) {
 			setCurrentSlide((current) =>
 				// current === 0 ? testimonials.length - 1 : current - 1

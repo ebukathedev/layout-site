@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { rewards } from "../../data";
+import { rewards } from "../../../data";
 import FeatureCard from "./FeatureCard";
 
-const Rewards = () => {
+const Rewards: React.FC = () => {
 	const [activeContent, setActiveContent] = useState(0);
 	const reward = rewards[activeContent];
 	const rewardCategories = [

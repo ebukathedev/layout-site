@@ -1,6 +1,4 @@
-import illustration6 from "../../assets/illustration_6.png";
-
-const Instructor = () => {
+const Instructor:React.FC = () => {
 	return (
 		<section className="py-24 lg:py-28">
 			<div className="container">
@@ -26,7 +24,11 @@ const Instructor = () => {
 						</div>
 					</div>
 					<div className="flex justify-center max-w-[400px] mx-auto">
-						<img src={illustration6} alt="" className="-mr-5" />
+						<img
+							src="https://res.cloudinary.com/drtebxtdt/image/upload/v1729939947/layout/landing%20page/illustration_6_xy8wlo.png"
+							alt="illustration"
+							className="-mr-5"
+						/>
 					</div>
 				</div>
 			</div>

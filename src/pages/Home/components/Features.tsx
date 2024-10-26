@@ -1,8 +1,7 @@
-import { features } from "../../data";
-import FeatureCard from "./FeatureCard";
-import skateboard from "../../assets/skateboard.png";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
+import { features } from "../../../data";
+import FeatureCard from "./FeatureCard";
 
 const MarqueeItem = ({ skill }: { skill: string }) => {
 	return (
@@ -13,7 +12,7 @@ const MarqueeItem = ({ skill }: { skill: string }) => {
 	);
 };
 
-const Features = () => {
+const Features: React.FC = () => {
 	const skills = [
 		"Lifestyle",
 		"Development",
@@ -43,7 +42,11 @@ const Features = () => {
 						Get started
 					</Link>
 					<div className="mt-20 mb-24 max-w-[800px] lg:mt-24 lg:mb-28">
-						<img src={skateboard} alt="" className="w-full" />
+						<img
+							src="https://res.cloudinary.com/drtebxtdt/image/upload/v1729939948/layout/landing%20page/skateboard_cd8qzn.png"
+							alt="illustration"
+							className="w-full"
+						/>
 					</div>
 				</div>
 
