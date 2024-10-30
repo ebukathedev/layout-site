@@ -1,19 +1,20 @@
-// import Marquee from "react-fast-marquee";
+"use client";
 import { features } from "@/data";
 import FeatureCard from "./FeatureCard";
 import Link from "next/link";
 import Image from "next/image";
+import Marquee from "./Marquee";
 
 const MarqueeItem = ({ skill }: { skill: string }) => {
 	return (
 		<>
-			<span className="ml-2">{skill}</span>
+			<span className="ml-3">{skill}</span>
 			<span className="font-bold"> • </span>
 		</>
 	);
 };
 
-const Features: React.FC = () => {
+export default function Features() {
 	const skills = [
 		"Lifestyle",
 		"Development",
@@ -53,18 +54,16 @@ const Features: React.FC = () => {
 					</div>
 				</div>
 
-				<div className="py-4 border-[0.7px] border-black">
-					<div>
-						<div className="space-x-2 overflow-y-hidden text-lg lg:text-xl font-arvo">
+				<div className="py-4 border-[0.7px] border-y-black flex overflow-hidden">
+					<Marquee>
+						<div className="space-x-3 text-lg lg:text-xl font-arvo flex flex-shrink-0">
 							{skills.map((skill) => (
 								<MarqueeItem skill={skill} key={skill} />
 							))}
 						</div>
-					</div>
+					</Marquee>
 				</div>
 			</div>
 		</section>
 	);
-};
-
-export default Features;
+}

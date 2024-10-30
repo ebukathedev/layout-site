@@ -18,6 +18,20 @@ const config: Config = {
 			padding: "1rem",
 		},
 		extend: {
+			animation: {
+				scrollLeft: "scrollLeft linear infinite",
+				scrollRight: "scrollRight linear infinite",
+			},
+			keyframes: {
+				scrollLeft: {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-100%)" },
+				},
+				scrollRight: {
+					"0%": { transform: "translateX(-100%)" },
+					"100%": { transform: "translateX(0)" },
+				},
+			},
 			colors: {
 				brand: {
 					100: "var(--brand-100)",
