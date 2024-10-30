@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Besley:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--brand-100: #ddc3ff;
+		--brand-200: #dcc1ff;
+		--brand-300: #be8bff;
+		--brand-400: #aa66ff;
+		--brand-500: #8e34ff;
+		--brand-600: #9a4aff;
+		--brand-700: #7518e9;
+
+		--gray-100: #e2e2e2;
+		--gray-200: #dadada;
+		--gray-300: #7c7683;
+		--gray-400: #7f7f7f;
+		--gray-500: #888888;
+		--gray-600: #393939;
+		--gray-700: #cccccc;
+		--gray-800: #afafaf;
+
+		--stroke-brand: #650dd3;
+		--stroke-light-brand: #ab6bfd;
+		--stroke-blue: #008fca;
+		--stroke-brown: #974510;
+		--stroke-gray: #b2b2b2;
+		--stroke-light-gray: #d4d4d4;
+		--stroke-dark-gray: #252525;
+		--stroke-borderline: #bebebe;
+
+		--shadow-brand: #4e00af;
+		--shadow-blue: #0d80af;
+		--shadow-brown: #7a3508;
+		--shadow-gray: #ababab;
+
+		--brand-gradient: linear-gradient(0deg, #8e34ff 44%, #aa66ff 100%);
+
+		--light-brand-gradient: linear-gradient(
+			0deg,
+			#be8bff 44%,
+			#dcc3ff 100%
+		);
+
+		--blue-gradient: linear-gradient(#6cd3fd 0%, #00a6ea 100%);
+
+		--brown-gradient: linear-gradient(#f09153 0%, #c66526 100%);
+
+		--gray-gradient: linear-gradient(#ffffff 0%, #dadada 100%);
+
+		--dark-gray-gradient: linear-gradient(#848383 0%, #303030 100%);
+	}
+
+	html,
+	body {
+		@apply font-besley scroll-smooth;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply font-bold;
+	}
+}
+
+@layer components {
+	.headline {
+		@apply leading-8 text-center sm:leading-[3rem];
+		font-size: clamp(1.55rem, 5vw, 3rem);
+	}
+
+	.btn {
+		@apply font-extrabold border-2 shadow-[0_4px_0] inline-block font-besley rounded-[50px] text-white;
+	}
+}
