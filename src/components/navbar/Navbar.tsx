@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<header className="py-6 border-b border-stroke-borderline/40 md:py-8">
 			<nav className="container flex items-center justify-between font-bold font-besley lg:text-lg">
-				<Link href="/" className="w-28">
+				<Link href="/" className="w-20 md:w-24 lg:w-28">
 					<Image
 						src={"logo.svg"}
 						alt="Layout"
