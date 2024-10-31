@@ -48,7 +48,7 @@ const Testimonials: React.FC = () => {
 								}}
 								className="transition-transform ease-out duration-500 text-center rounded-[30px] border-[3px] border-stroke-gray px-6 py-8 flex flex-col justify-between gap-4 shadow-[0_8px_0] shadow-stroke-gray md:text-lg lg:text-xl font-medium lg:px-10 lg:py-14 min-w-full lg:min-w-[410px] md:gap-8"
 							>
-								<p>“{testimonial.description}"</p>
+								<p>&quot;{testimonial.description}&quot;</p>
 								<span>{testimonial.author}</span>
 							</div>
 						))}
