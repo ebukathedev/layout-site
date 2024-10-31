@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Besley, Rubik, Arvo } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const besley = Besley({
 	subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
 				className={`${besley.variable} ${rubik.variable} ${arvo.variable} antialiased`}
 			>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

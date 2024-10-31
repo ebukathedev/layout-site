@@ -56,7 +56,7 @@ export default function Features() {
 
 				<div className="py-4 border-[0.7px] border-y-black flex overflow-hidden">
 					<Marquee>
-						<div className="space-x-3 text-lg lg:text-xl font-arvo flex flex-shrink-0">
+						<div className="flex flex-shrink-0 text-lg space-x-3 lg:text-xl font-arvo">
 							{skills.map((skill) => (
 								<MarqueeItem skill={skill} key={skill} />
 							))}

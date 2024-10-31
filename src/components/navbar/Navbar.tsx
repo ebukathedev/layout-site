@@ -23,7 +23,7 @@ const Navbar = () => {
 					<div className="relative p-2">
 						<Link
 							href={"/courses"}
-							className="transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700 "
+							className="cursor-pointer transition-colors duration-200 ease-in-out hover:text-brand-700 "
 						>
 							Courses
 						</Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
 					</div>
 					<Link
 						href={"/about"}
-						className="p-2 transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700"
+						className="p-2 cursor-pointer transition-colors duration-200 ease-in-out hover:text-brand-700"
 					>
 						About us
 					</Link>
