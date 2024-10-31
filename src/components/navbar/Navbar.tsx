@@ -1,9 +1,16 @@
+"use client";
 import HamburgerButton from "@/components/navbar/HamburgerButton";
 import Button from "@/components/UI/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleMenu = () => setIsOpen(!isOpen);
+
 	return (
 		<header className="py-6 border-b border-stroke-borderline/40 md:py-8">
 			<nav className="container flex items-center justify-between font-bold font-besley lg:text-lg">
@@ -16,13 +23,13 @@ const Navbar = () => {
 					/>
 				</Link>
 
-				<HamburgerButton />
+				<HamburgerButton isOpen={isOpen} toggleMenu={toggleMenu} />
 
 				<div className="hidden ml-10 mr-auto space-x-4 md:flex xl:ml-12">
 					<div className="relative p-2">
 						<Link
 							href={"/courses"}
-							className="transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700 "
+							className="transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700"
 						>
 							Courses
 						</Link>
@@ -52,6 +59,7 @@ const Navbar = () => {
 					<Button />
 				</div>
 			</nav>
+			<MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
 		</header>
 	);
 };
