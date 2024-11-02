@@ -2,6 +2,7 @@
 import { rewards } from "@/data";
 import { useEffect, useState } from "react";
 import FeatureCard from "./FeatureCard";
+import Button from "../UI/Button";
 
 const Rewards: React.FC = () => {
 	const [activeContent, setActiveContent] = useState(0);
@@ -34,7 +35,7 @@ const Rewards: React.FC = () => {
 	return (
 		<section className="py-24 border-b lg:py-32 border-stroke-gray">
 			<div className="container">
-				<div className="text-center space-y-6 md:space-y-8 lg:space-y-10">
+				<div className="space-y-6 text-center md:space-y-8 lg:space-y-10">
 					<h2 className="headline">
 						you don’t need to worry{" "}
 						<br className="hidden min-[352px]:block" /> what next
@@ -51,17 +52,17 @@ const Rewards: React.FC = () => {
 					</div>
 					<div className="grid grid-cols-2 gap-6 md:flex md:justify-center">
 						{rewardCategories.map((category, index) => (
-							<button
+							<Button
 								key={category}
 								onClick={() => handleActiveContent(index)}
-								className={`px-0 min-[380px]:px-8 py-3 text-xs min-[380px]:text-sm btn lg:text-lg sm:min-w-[157.16px] transition-all duration-200 ${
+								className={`px-0 min-[380px]:px-8 py-3 text-xs min-[380px]:text-sm btn lg:text-lg sm:min-w-[157.16px] ${
 									activeContent === index
 										? "bg-dark-gray-gradient shadow-black border-black text-white"
 										: "bg-gray-100 shadow-shadow-gray border-stroke-light-gray text-black opacity-60"
 								}`}
 							>
 								{category}
-							</button>
+							</Button>
 						))}
 					</div>
 				</div>

@@ -1,8 +1,8 @@
 "use client";
 import { features } from "@/data";
 import FeatureCard from "./FeatureCard";
-import Link from "next/link";
 import Image from "next/image";
+import Button from "../UI/Button";
 import Marquee from "./Marquee";
 
 const MarqueeItem = ({ skill }: { skill: string }) => {
@@ -37,12 +37,13 @@ export default function Features() {
 					<h1 className="mb-6 headline md:mb-10 lg:mb-[57px]">
 						learn any skill <br /> anytime, anywhere
 					</h1>
-					<Link
+					<Button
 						href="/"
-						className="px-8 py-3 text-sm text-white border-black btn bg-dark-gray-gradient shadow-black lg:text-lg"
+						variant="dark"
+						className="px-8 py-3 lg:text-lg"
 					>
 						Get started
-					</Link>
+					</Button>
 					<div className="mt-20 mb-24 max-w-[800px] lg:mt-24 lg:mb-28">
 						<Image
 							src="https://res.cloudinary.com/drtebxtdt/image/upload/v1729939948/layout/landing%20page/skateboard_cd8qzn.png"
@@ -56,7 +57,7 @@ export default function Features() {
 
 				<div className="py-4 border-[0.7px] border-y-black flex overflow-hidden">
 					<Marquee>
-						<div className="flex flex-shrink-0 text-lg space-x-3 lg:text-xl font-arvo">
+						<div className="flex flex-shrink-0 space-x-3 text-lg lg:text-xl font-arvo">
 							{skills.map((skill) => (
 								<MarqueeItem skill={skill} key={skill} />
 							))}

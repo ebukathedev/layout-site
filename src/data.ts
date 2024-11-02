@@ -107,3 +107,14 @@ export const testimonials = [
 		author: "Precious Kolawole",
 	},
 ];
+
+export const courses = [
+	"Development",
+	"Design",
+	"Marketing",
+	"Business",
+	"Data",
+	"Music",
+];
+
+export const bulletPointColors = ["#FFB820", "#08B7FF", "#7518E9"];

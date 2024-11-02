@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../UI/Button";
 
 const Instructor: React.FC = () => {
 	return (
@@ -20,9 +21,7 @@ const Instructor: React.FC = () => {
 								with the necessary tools and expertise to teach
 								your passion.
 							</p>
-							<button className="px-4 py-3 text-sm bg-brand-gradient border-stroke-brand shadow-shadow-brand lg:text-base btn">
-								Start teaching today
-							</button>
+							<Button>Start teaching today</Button>
 						</div>
 					</div>
 					<div className="flex justify-center max-w-[400px] mx-auto lg:self-end">

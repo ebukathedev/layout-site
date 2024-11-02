@@ -1,21 +1,12 @@
 import Link from "next/link";
+// import Button from "../UI/Button";
+import { courses, bulletPointColors } from "@/data";
 import Button from "../UI/Button";
 
 interface MobileMenuProps {
 	isOpen: boolean;
 	toggleMenu: () => void;
 }
-
-const courses = [
-	"Development",
-	"Design",
-	"Marketing",
-	"Business",
-	"Data",
-	"Music",
-];
-
-const bulletPointColors = ["#FFB820", "#08B7FF", "#7518E9"];
 
 export default function MobileMenu({ isOpen, toggleMenu }: MobileMenuProps) {
 	return (
@@ -70,7 +61,9 @@ export default function MobileMenu({ isOpen, toggleMenu }: MobileMenuProps) {
 					</li>
 
 					<li className="pt-4">
-						<Button className="w-full text-center" />
+						<Button href="/" className="w-full text-center">
+							Get started
+						</Button>
 					</li>
 				</ul>
 			</nav>
