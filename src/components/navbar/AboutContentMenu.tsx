@@ -7,7 +7,9 @@ export default function AboutContentMenu() {
 			<p className="text-center">
 				Empowering Africa with <br /> digital skills in a fun way.
 			</p>
-			<Button className="px-8">Learn more</Button>
+			<Button href="/about" className="px-8">
+				Learn more
+			</Button>
 		</div>
 	);
 }
