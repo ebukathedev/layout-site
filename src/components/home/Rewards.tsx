@@ -55,11 +55,10 @@ const Rewards: React.FC = () => {
 							<Button
 								key={category}
 								onClick={() => handleActiveContent(index)}
-								className={`px-0 min-[380px]:px-8 py-3 text-xs min-[380px]:text-sm btn lg:text-lg sm:min-w-[157.16px] ${
-									activeContent === index
-										? "bg-dark-gray-gradient shadow-black border-black text-white"
-										: "bg-gray-100 shadow-shadow-gray border-stroke-light-gray text-black opacity-60"
-								}`}
+								variant={
+									activeContent === index ? "dark" : "gray"
+								}
+								className="px-0 min-[380px]:px-8 py-3 text-xs min-[380px]:text-sm btn lg:text-lg sm:min-w-[157.16px]"
 							>
 								{category}
 							</Button>

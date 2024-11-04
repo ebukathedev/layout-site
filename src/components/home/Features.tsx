@@ -34,9 +34,9 @@ export default function Features() {
 			</div>
 			<div className="pt-24 border-t bg-[#F7E5A3] border-stroke-borderline">
 				<div className="container flex flex-col items-center">
-					<h1 className="mb-6 headline md:mb-10 lg:mb-[57px]">
+					<h2 className="mb-6 headline md:mb-10 lg:mb-[57px]">
 						learn any skill <br /> anytime, anywhere
-					</h1>
+					</h2>
 					<Button
 						href="/"
 						variant="dark"

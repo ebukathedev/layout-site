@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
-type ButtonVariant = "brand" | "dark";
+type ButtonVariant = "brand" | "light-brand" | "dark" | "gray";
 
 type ButtonProps = {
 	children: React.ReactNode;
@@ -27,8 +27,12 @@ const Button: React.FC<ButtonProps> = ({
 			{
 				"bg-brand-gradient border-stroke-brand shadow-shadow-brand":
 					variant === "brand",
+				"bg-light-brand-gradient border-stroke-light-brand shadow-stroke-light-brand":
+					variant === "light-brand",
 				"bg-dark-gray-gradient border-black shadow-black":
 					variant === "dark",
+				"bg-gray-100 shadow-shadow-gray border-stroke-light-gray text-black opacity-60":
+					variant === "gray",
 			},
 			className
 		)
