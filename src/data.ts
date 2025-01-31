@@ -124,11 +124,37 @@ export const mission = [
 		],
 	},
 	{
-		id: 1,
+		id: 3,
 		title: "Accessible to all",
 		description: [
 			"There are over a million people learning a skill and the majority are doing so to gain access to better opportunities. Unfortunately, learning a skill is expensive and inaccessible to most.",
 			"We created Layout so that everyone could have a chance. Our platform is easy to use and available to everyone, even without much money.",
+		],
+	},
+];
+
+export const approach = [
+	{
+		id: 1,
+		title: "Our teaching approach",
+		description: [
+			"We believe that anyone can learn a digital skill with Layout. Bite-size lessons feel more like a game than a textbook, and that's by design: Learning is easier when you're having fun.",
+			"But Layout isn't just a game. It's based on a methodology proven to foster long-term retention, and a curriculum aligned to an industry standard. Let's explore how digital skills learning happens with Layout!",
+		],
+	},
+	{
+		id: 2,
+		title: "Personalization",
+		description: [
+			"You’d think personalized instruction would be tough to pull off. But we’re up for the challenge! Machine learning algorithms are always at work to serve up learning material at just the right difficulty level for each learner.",
+		],
+	},
+	{
+		id: 3,
+		title: "Innovation",
+		description: [
+			"At Layout, we're committed to improvement. Test questions are embedded throughout our courses to measure how learners are progressing and to show where Duolingo can improve.",
+			"We use the results to develop new and better courses, tools, update our materials as digital skills evolve, and ensure we're continuing to offer the best digital skills education in the Africa.",
 		],
 	},
 ];
