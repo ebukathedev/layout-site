@@ -3,7 +3,7 @@ import HamburgerButton from "@/components/navbar/HamburgerButton";
 // import Button from "@/components/UI/Button";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MobileMenu from "./MobileMenu";
 import FlyoutLink from "./FlyoutLink";
 import CourseContentMenu from "./CourseContentMenu";
@@ -27,6 +27,19 @@ const Navbar = ({
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleMenu = () => setIsOpen(!isOpen);
+
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+
+		// Cleanup function to reset overflow when component unmounts
+		return () => {
+			document.body.style.overflow = "unset";
+		};
+	}, [isOpen]);
 
 	return (
 		<header
