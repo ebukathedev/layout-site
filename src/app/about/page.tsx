@@ -28,7 +28,7 @@ export default function About() {
 				activeContent={activeContent}
 				toggleActiveContent={toggleActiveContent}
 			/>
-			<main>
+			<main className="container pt-10 pb-24">
 				{activeContent === "Mission" && <Mission />}
 				{activeContent === "Approach" && <Approach />}
 				{activeContent === "Our story" && <Story />}

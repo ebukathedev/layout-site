@@ -108,6 +108,31 @@ export const testimonials = [
 	},
 ];
 
+export const mission = [
+	{
+		id: 1,
+		title: "Personalized training",
+		description: [
+			"Everyone learns in different ways. Our ultimate goal to create the most effective educational system possible and tailor it to each student giving everyone access to a private tutor experience through technology",
+		],
+	},
+	{
+		id: 2,
+		title: "Making learning fun",
+		description: [
+			"It's hard to stay motivated when learning online, so we made Layout so fun that people would prefer picking up new skills over playing a game.",
+		],
+	},
+	{
+		id: 1,
+		title: "Accessible to all",
+		description: [
+			"There are over a million people learning a skill and the majority are doing so to gain access to better opportunities. Unfortunately, learning a skill is expensive and inaccessible to most.",
+			"We created Layout so that everyone could have a chance. Our platform is easy to use and available to everyone, even without much money.",
+		],
+	},
+];
+
 export const courses = [
 	"Development",
 	"Design",
