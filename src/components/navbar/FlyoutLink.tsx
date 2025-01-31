@@ -24,7 +24,9 @@ export default function FlyoutLink({
 		>
 			<Link
 				href={href}
-				className="p-2 transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700"
+				className={`p-2 transition-colors duration-200 ease-in-out cursor-pointer hover:text-brand-700 ${
+					open && "text-brand-700"
+				}`}
 			>
 				{children}
 			</Link>

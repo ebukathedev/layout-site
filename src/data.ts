@@ -158,6 +158,24 @@ export const approach = [
 		],
 	},
 ];
+export const story = [
+	{
+		id: 1,
+		title: "Our journey",
+		description: [
+			"We've recognized the challenges many face in accessing quality education, especially when good schools are scarce or expensive. Many lack computers or internet access, and some find it hard to use technology. ",
+			"Traditional learning can also be boring and financial constraints often prevent people from enrolling in courses, while jobs increasingly require digital skills, but not everyone has them.",
+		],
+	},
+	{
+		id: 2,
+		title: "Where we're headed",
+		description: [
+			"At Layout, we're committed to improvement. Test questions are embedded throughout our courses to measure how learners are progressing and to show where Duolingo can improve.",
+			"We use the results to develop new and better courses, tools, update our materials as digital skills evolve, and ensure we're continuing to offer the best digital skills education in the Africa.",
+		],
+	},
+];
 
 export const courses = [
 	"Development",
