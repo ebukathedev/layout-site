@@ -177,6 +177,81 @@ export const story = [
 	},
 ];
 
+export const whyLayout = [
+	{
+		id: 1,
+		bulletPointColor: "#7518E9",
+		title: "Fun Learning",
+		description: [
+			"Say goodbye to boring lectures and hello engaging lessons, games and interactive features that’ll have you hooked from day one!",
+		],
+	},
+	{
+		id: 2,
+		bulletPointColor: "#08B7FF",
+		title: "Accessible",
+		description: [
+			"Our platform is easy to use and available to everyone. Learn in your own space, at your own pace.",
+		],
+	},
+	{
+		id: 3,
+		bulletPointColor: "#7518E9",
+		title: "Practical Skills",
+		description: [
+			"We teach skills that are useful right now and future, focusing on what's needed in today's job market.",
+		],
+	},
+	{
+		id: 4,
+		bulletPointColor: "#08B7FF",
+		title: "Learn from pros",
+		description: [
+			"Our instructors are carefully selected to give you the best learning outcome.",
+		],
+	},
+	{
+		id: 5,
+		bulletPointColor: "#7518E9",
+		title: "Support community",
+		description: [
+			"Community of learners just like you, where you can share ideas, get inspired, and cheer each other on every step of the way!",
+		],
+	},
+];
+
+export const growthOpportunities = [
+	{
+		id: 1,
+		bulletPointColor: "#FFB820",
+		title: "Grow users",
+		description: ["Reach more learners around the africa"],
+	},
+	{
+		id: 2,
+		bulletPointColor: "#08B7FF",
+		title: "Teach better",
+		description: [
+			"Teach more effectively, and to higher levels of proficiency",
+		],
+	},
+	{
+		id: 3,
+		bulletPointColor: "#7518E9",
+		title: "Become the proficiency standard",
+		description: [
+			"Make courses on Layout be the universal credential for digital skills proficiency",
+		],
+	},
+	{
+		id: 4,
+		bulletPointColor: "#F6F780",
+		title: "Expand",
+		description: [
+			"Provide high quality, universally available education in more digital skills",
+		],
+	},
+];
 export const courses = [
 	"Development",
 	"Design",

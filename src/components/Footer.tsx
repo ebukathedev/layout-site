@@ -33,6 +33,14 @@ export default function Footer() {
 									Partnership
 								</Link>
 							</li>
+							<li>
+								<Link
+									className="transition-all duration-200 ease-in-out hover:text-white"
+									href={"/partnership"}
+								>
+									Events
+								</Link>
+							</li>
 						</ul>
 					</div>
 					<div className="space-y-[31px]">

@@ -1,5 +1,6 @@
-import { story } from "@/data";
+import { story, whyLayout } from "@/data";
 import React from "react";
+import SectionList from "../SectionList";
 
 export default function Story() {
 	return (
@@ -27,9 +28,11 @@ export default function Story() {
 					</div>
 				))}
 			</div>
-			<div>
-				<div>Why layout</div>
-			</div>
+			<SectionList
+				subtitle="Why layout"
+				heading="how are we different"
+				itemsArray={whyLayout}
+			/>
 		</section>
 	);
 }
